@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid black;
+      }
+      table {
+        /* border-spacing: 10px 20px;
+        border-spacing: 10px; */
+        border-collapse: collapse;
+        border-collapse: separate;
+        width: 300px;
+        empty-cells: hide;
+        table-layout: auto;
+      }
+      td {
+        vertical-align: top;
+        padding: 10px;
+      }
+      caption {
+        caption-side: bottom;
+      }
+      /* tr:hover {
+        background: gray;
+      } */
+      tr:nth-child(even) {
+        background: rgba(195, 219, 227, 0.993);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Table Properties:</h1>
+    <h3>
+      border-spacing,border-collapse,vertical-align,caption-side,empty-cells,table-layout
+    </h3>
+    <table>
+      <caption>
+        Employee Record
+      </caption>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>
+          Mohan Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+          fuga, iure explicabo laborum eius unde consequuntur. Tempora
+          perspiciatis sed, quod, unde natus saepe voluptatem tempore pariatur
+          sint recusandae molestias. Assumenda.
+        </td>
+        <td>Kumar</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Salim</td>
+        <td>Khan</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Inder</td>
+        <td>Singh</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+  </body>
+</html>

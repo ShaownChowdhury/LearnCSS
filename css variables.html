@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --main-color: orange;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: slategray;
+        margin: 0;
+        padding: 0;
+      }
+      #wrapper {
+        box-shadow: 2px 2px black;
+        width: 1000px;
+        background: white;
+        margin: 0 auto;
+      }
+      #header {
+        background: crimson;
+        height: 100px;
+        color: white;
+      }
+      #header h1 {
+        padding: 30px 0 0 20px;
+        margin: 0px;
+        text-align: center;
+      }
+      #menu {
+        background: var(--main-color);
+      }
+      #menu ul {
+        margin: 0;
+        padding: 0;
+      }
+      #menu li {
+        display: inline-block;
+
+        text-align: center;
+      }
+      #menu li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: black;
+      }
+      #menu li a:hover {
+        background: crimson;
+        color: white;
+      }
+      #content {
+        width: 800px;
+        float: left;
+        min-height: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      #sidebar {
+        background: var(--main-color);
+        width: 200px;
+        float: right;
+        min-height: 400px;
+      }
+      #sidebar a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        margin-top: 10px;
+      }
+
+      #footer {
+        background: var(--main-color);
+        clear: both;
+        padding: 5px 10px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Sample Website</h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <h2>Design Basic Layout</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus
+          enim, iure dicta soluta ullam vero qui sit sed iste est quis ipsam
+          neque ea, assumenda veritatis nam. Qui, temporibus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus
+          enim, iure dicta soluta ullam vero qui sit sed iste est quis ipsam
+          neque ea, assumenda veritatis nam. Qui, temporibus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus
+          enim, iure dicta soluta ullam vero qui sit sed iste est quis ipsam
+          neque ea, assumenda veritatis nam. Qui, temporibus?
+        </p>
+      </div>
+
+      <div id="sidebar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div id="footer">shaown@copyright.com</div>
+    </div>
+  </body>
+</html>

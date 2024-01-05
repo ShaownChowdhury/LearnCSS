@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background image</title>
+    <style>
+      body {
+        background: rgba(210, 180, 140, 0.533);
+      }
+      h1 {
+        color: transparent;
+        background-image: url(back.jpg);
+        font-size: 200px;
+        font-family: impact;
+        background-clip: text;
+      }
+      #box {
+        width: 400px;
+        height: 400px;
+        padding: 25px;
+        border: 20px dotted orange;
+        background-color: white;
+        background-clip: content-box;
+        background-clip: padding-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background clip:</h1>
+
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iusto
+      molestias! Dolore deserunt qui soluta vitae corrupti velit possimus!
+      Maiores tempore distinctio facilis sint doloremque, quisquam vel veniam
+      accusantium nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Veritatis, iusto molestias! Dolore deserunt qui soluta vitae
+      corrupti velit possimus! Maiores tempore distinctio facilis sint
+      doloremque, quisquam vel veniam accusantium nostrum. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Veritatis, iusto molestias! Dolore
+      deserunt qui soluta vitae corrupti velit possimus! Maiores tempore
+      distinctio facilis sint doloremque, quisquam vel veniam accusantium
+    </div>
+  </body>
+</html>
