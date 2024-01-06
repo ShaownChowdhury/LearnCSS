@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform 3d</title>
+    <style>
+      .base {
+        width: 350px;
+        height: 250px;
+        background: gray;
+        margin: 100px 0 0 100px;
+      }
+      #box {
+        width: 350px;
+        height: 250px;
+        background: tomato;
+        transform: perspective(250px) rotateX(70deg) translateZ(4px);
+        transform: perspective(800px) rotateY(160deg) translateZ(4px);
+        transform: perspective(500px) rotateY(50deg);
+        transform: perspective(800px) translate3d(50px, 50px, 160px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform 3d:</h1>
+    <div class="base">
+      <div id="box">Shaown Chowdhury</div>
+    </div>
+  </body>
+</html>

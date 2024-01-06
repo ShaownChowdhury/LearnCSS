@@ -9,21 +9,49 @@
         width: 150px;
         height: 150px;
         background: pink;
+        margin-bottom: 20px;
         /* transition-property: width, height, background;
         transition-duration: 2s;
         transition-duration: 2s, 4s, 2s; */
-        transition: width, height, background, 2s, 4s, 2s;
-        transition: all 2s;
+        /* transition: width, height, background, 2s, 4s, 2s; */
+        /* transition: all 2s; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: steps(4, end); */
+        /* transition-timing-function: steps(4);
+        transition-delay: 2s; */
+        transition: all 2s linear 1s;
       }
-      #box:hover {
-        width: 300px;
-        height: 300px;
+
+      /* #box:hover {
+        width: 500px;
+        height: 500px;
         background: orange;
+      } */
+      #box:active {
+        width: 500px;
+        height: 500px;
+        background: orange;
+        transition: all 2s linear 1s;
       }
+      input {
+        width: 100px;
+      }
+      input:focus {
+        width: 300px;
+        transition: width 2s linear;
+      }
+      /* @media screen and (max-width: 960px) {
+        #box {
+          width: 600px;
+          transition: all 2s linear 1s;
+        }
+      } */
     </style>
   </head>
   <body>
     <h1>CSS Transition:</h1>
     <div id="box"></div>
+
+    <input type="text" name="name" value="" />
   </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <style>
+      body {
+        background: gray;
+      }
+      #box {
+        width: 250px;
+        height: 150px;
+        background: tomato;
+        margin: 150px 300px;
+        /* transform: rotate(180deg);
+        transform: skew(20deg); */
+        transform: translate(-20px, 10px);
+        transform: scaleY(2);
+        /* transform-origin: left top; */
+      }
+      #box2 {
+        width: 250px;
+        height: 150px;
+        background: tomato;
+        margin: 150px 300px;
+
+        transform: scale(1) rotate(0deg);
+        transition: all 3s;
+      }
+      #box2:hover {
+        transform: scale(3) rotate(30deg);
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS transform 2D: rotate,translate,skew</h1>
+    <div id="box">Shaown Chowdhury</div>
+    <div id="box2">Shaown Chowdhury</div>
+  </body>
+</html>
