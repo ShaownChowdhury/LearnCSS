@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Style</title>
+    <style>
+      .base {
+        width: 350px;
+        height: 250px;
+        background: gray;
+        margin: 100px 0 0 100px;
+        perspective: 800px;
+        transform: rotatey(30deg);
+        transform-style: preserve-3d;
+      }
+      #box {
+        width: 350px;
+        height: 250px;
+        background: tomato;
+        transform: rotateX(60deg);
+        transform-origin: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform Style & transform-origin</h1>
+    <div class="base">
+      <div id="box">rotateX</div>
+    </div>
+  </body>
+</html>
