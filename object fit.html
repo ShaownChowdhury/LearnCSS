@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Object Fit</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 600px;
+        box-sizing: border-box;
+        clear: both;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        float: left;
+        margin: 10px;
+        overflow: hidden;
+      }
+      .box img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        /* object-fit: contain;
+        object-fit: fill;
+        object-fit: scale-down; */
+        object-position: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Object Fit:</h1>
+    <div class="container">
+      <div class="box">
+        <img src="./nature.jpg" />Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Tenetur similique, beatae voluptates alias architecto
+        sit commodi officia veritatis voluptas, recusandae repudiandae. Odit
+        libero, saepe modi dolores iure quisquam veritatis possimus!
+      </div>
+      <div class="box">
+        <img src="./nature2.jpg" />Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Tenetur similique, beatae voluptates alias architecto
+        sit commodi officia veritatis voluptas, recusandae repudiandae. Odit
+        libero, saepe modi dolores iure quisquam veritatis possimus!
+      </div>
+      <div class="box">
+        <img src="./Shaown.jpg" />Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Tenetur similique, beatae voluptates alias architecto
+        sit commodi officia veritatis voluptas, recusandae repudiandae. Odit
+        libero, saepe modi dolores iure quisquam veritatis possimus!
+      </div>
+    </div>
+  </body>
+</html>
