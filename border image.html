@@ -6,19 +6,35 @@
     <title>Border image</title>
     <style>
       .box {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         border: 30px solid black;
         text-align: justify;
-        padding: 10px;
-        border-image-source: url(./emoji2.png);
-        border-image-slice: 80;
-        border-image-repeat: stretch repeat;
+        padding: 20px;
+        margin: 40px;
+        background: mediumpurple;
+        /* border-image-source: url(./newlove.png);
+        border-image-slice: 10;
+        border-image-width: 30px;
+        border-image-outset: 50px;
+        border-image-repeat: repeat; */
+        border-image: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-2.png")
+          33% / 30px / 50px repeat;
+
+        /* border-image: linear-gradient(to left, red, yellow) 10 / 30px / 50px
+          repeat; */
+
+        /* border-image: linear-gradient(red, yellow) 10 / 30px / 50px repeat;
+        border-image-slice: 33% 33% 33% 33%;
+        border-image-width: 1.5em 1.5em 1.5em 1.5em;
+        border-image-outset: 0px 0px 0px 0px;
+        border-image-repeat: round round;
+        border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-2.png"); */
       }
     </style>
   </head>
   <body>
-    <h1>Border image</h1>
+    <h1>Border image: collected from border image generator</h1>
     <div class="box">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet
       laborum, repellendus voluptas natus alias odio accusamus neque eligendi
