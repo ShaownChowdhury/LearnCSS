@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border image</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 30px solid black;
+        text-align: justify;
+        padding: 10px;
+        border-image-source: url(./emoji2.png);
+        border-image-slice: 80;
+        border-image-repeat: stretch repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border image</h1>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet
+      laborum, repellendus voluptas natus alias odio accusamus neque eligendi
+      magni dignissimos perferendis quo culpa libero magnam porro reiciendis
+      sint consequuntur!
+    </div>
+  </body>
+</html>
