@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p::after {
+        content: attr(data-content);
+        color: blue;
+      } */
+      p:hover::after {
+        content: attr(data-content);
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Attribute Function:</h1>
+    <p class="test" data-content=" Chowdhury">Shaown</p>
+  </body>
+</html>

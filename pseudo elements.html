@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 30px;
+      }
+      p::first-letter {
+        color: red;
+        font-size: 50px;
+      }
+      li::first-line {
+        color: orange;
+      }
+      p::selection {
+        color: red;
+        background: orange;
+      }
+      p::before {
+        content: "Shaown ";
+        background: skyblue;
+        display: block;
+      }
+      /* p::after {
+        content: "Chowdhury ";
+        background: skyblue;
+      } */
+      p:hover::after {
+        content: "Chowdhury ";
+        background: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit
+      possimus odit nulla qui, ipsa animi eum amet! Porro quidem veritatis totam
+      cupiditate molestias assumenda temporibus illo quae voluptatem blanditiis?
+    </p>
+    <ul>
+      <h3>Pseudo elements::6 types:</h3>
+      <li>::first-letter</li>
+      <li>::first-line</li>
+      <li>::selection</li>
+      <li>::placeholder</li>
+      <li>::before</li>
+      <li>::after</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit
+      possimus odit nulla qui, ipsa animi eum amet! Porro quidem veritatis totam
+      cupiditate molestias assumenda temporibus illo quae voluptatem blanditiis?
+    </p>
+  </body>
+</html>

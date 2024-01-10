@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Counter</title>
+    <style>
+      body {
+        font-size: 20px;
+        counter-reset: h2-counter 0;
+      }
+      /* h2::before {
+        content: "Chapter " counter(my-counter, lower-roman) ": ";
+        counter-increment: my-counter 1;
+      } */
+      h2 {
+        counter-reset: h3-counter 0;
+      }
+      h2::before {
+        content: "Section " counter(h2-counter) ":";
+        counter-increment: h2-counter 1;
+      }
+      h3::before {
+        content: counter(h2-counter) ":" counter(h3-counter) " ";
+        counter-increment: h3-counter 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Counter::</h1>
+
+    <h2>HTML and CSS</h2>
+    <h3>html tutorial</h3>
+    <h3>css tutorial</h3>
+
+    <h2>javascript</h2>
+    <h3>js tutorial</h3>
+    <h3>jquery tutorial</h3>
+
+    <h2>heading 1</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+      architecto quisquam doloremque minima similique consequatur, libero
+      dolores asperiores modi velit. Quos, corporis deserunt ipsa ullam sapiente
+      eos sint dolores inventore.
+    </p>
+    <h2>heading 2</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+      architecto quisquam doloremque minima similique consequatur, libero
+      dolores asperiores modi velit. Quos, corporis deserunt ipsa ullam sapiente
+      eos sint dolores inventore.
+    </p>
+    <h2>heading 3</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+      architecto quisquam doloremque minima similique consequatur, libero
+      dolores asperiores modi velit. Quos, corporis deserunt ipsa ullam sapiente
+      eos sint dolores inventore.
+    </p>
+    <h2>heading 4</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+      architecto quisquam doloremque minima similique consequatur, libero
+      dolores asperiores modi velit. Quos, corporis deserunt ipsa ullam sapiente
+      eos sint dolores inventore.
+    </p>
+  </body>
+</html>
