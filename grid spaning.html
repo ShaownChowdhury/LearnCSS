@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        width: 700px;
+        background: lightblue;
+        color: white;
+        font-size: 30px;
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 100px);
+
+        grid-gap: 20px;
+      }
+
+      .items1 {
+        background: green;
+
+        /* grid-row: 2/3; */
+        /* grid-column: 3/4; */
+
+        grid-area: 2/3/3/4;
+        z-index: 1;
+      }
+      .items2 {
+        background: blue;
+        /* grid-row: 2 / span 2;
+        grid-column: 1/2;
+        z-index: 1; */
+      }
+      .items3 {
+        background: orange;
+        grid-row: 2/3;
+        grid-column: 2/4;
+      }
+      .items4 {
+        background: red;
+        grid-row: 3/4;
+        grid-column: 1/-1;
+      }
+      .items5 {
+        background: olivedrab;
+      }
+      .items6 {
+        background: lightcoral;
+
+        /* grid-area: 1/2/2/4; */
+
+        grid-row: 1/2;
+
+        grid-column: 1/4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid :Grid-items spanning</h1>
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+      <div class="items items5">Fifth</div>
+      <div class="items items6">Sixth</div>
+    </div>
+  </body>
+</html>

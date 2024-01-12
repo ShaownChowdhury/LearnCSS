@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Caret color</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      input {
+        font-size: 30px;
+        caret-color: red;
+      }
+      .fa-house {
+        font-size: 50px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Caret color & Web fonts : <i class="fa-solid fa-house"></i></h1>
+    <form action="" method="post">
+      <label> Name </label><i class="fa-solid fa-keyboard"></i>
+      <input type="text" name="fname" value="My name" /> <br /><br />
+
+      <label> Password </label> <input type="password" name="" /> <br /><br />
+
+      <label> Gender </label> <input type="radio" name="Gender" id="male" />
+      <label for="male">Male </label>
+      <input type="radio" name="Gender" id="female" />
+      <label for="female">Female </label><br /><br />
+
+      <label> Hobbies </label>
+      <input type="checkbox" name="hobby" id="music" />
+      <label for="music">Music </label>
+      <input type="checkbox" name="hobby" id="football" />
+      <label for="football">Football </label>
+      <input type="checkbox" name="hobby" id="cricket" />
+      <label for="cricket">Cricket </label>
+      <input type="checkbox" name="hobby" id="badminton" />
+      <label for="badminton">Badminton</label>
+    </form>
+  </body>
+</html>

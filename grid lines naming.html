@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        width: 700px;
+        background: lightblue;
+        color: white;
+        font-size: 30px;
+        display: grid;
+
+        grid-template-columns: repeat(3, [col-start] 1fr[col-end]);
+        grid-template-rows: [header-start]120px[header-end menu-start] 60px[menu-end box-start] 100px[box-end content-start] 400px[content-end footer-start] 50px[footer-end];
+
+        grid-gap: 15px;
+      }
+
+      .header {
+        background: green;
+
+        grid-row: header-start/header-end;
+        grid-column: col-start 1 / col-end 3;
+      }
+      .menu {
+        background: blue;
+        grid-row: menu-start/menu-end;
+        grid-column: col-start 1 / col-end 3;
+      }
+      .box1 {
+        background: orange;
+      }
+      .box2 {
+        background: red;
+      }
+      .sidebar {
+        background: olivedrab;
+        grid-row: box-start/content-end;
+        grid-column: 3/4;
+      }
+      .content {
+        background: lightcoral;
+        grid-row: content-start/content-end;
+        grid-column: col-start 1 / col-end 2;
+      }
+      .footer {
+        background: lightcoral;
+        grid-row: footer-start/footer-end;
+        grid-column: col-start 1 / col-end 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid :Grid-lines naming</h1>
+    <div class="container">
+      <div class="items header">Header</div>
+      <div class="items menu">Menu</div>
+      <div class="items box1">Box1</div>
+      <div class="items box2">Box2</div>
+      <div class="items sidebar">Sidebar</div>
+      <div class="items content">Content</div>
+      <div class="items footer">Footer</div>
+    </div>
+  </body>
+</html>
