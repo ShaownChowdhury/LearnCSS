@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        width: 700px;
+        height: 700px;
+        background: lightblue;
+        font-size: 30px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+
+        align-content: start;
+        align-content: space-between;
+        align-content: space-around;
+        align-content: space-evenly;
+
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+
+        grid-auto-flow: row dense;
+        /* row dense or column dense is use for filling any gap */
+      }
+
+      .items1 {
+        background: green;
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+      }
+      .items4 {
+        background: red;
+      }
+      .items5 {
+        background: olivedrab;
+      }
+      .items6 {
+        background: lightcoral;
+        grid-column: span 2;
+      }
+      .items7 {
+        background: tomato;
+        grid-column: span 2;
+      }
+      .items8 {
+        background: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid : Grid items alignment</h1>
+
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+      <div class="items items5">Fifth</div>
+      <div class="items items6">Sixth</div>
+      <div class="items items7">Seven</div>
+      <div class="items items8">Eight</div>
+      <div class="items items9">Eight</div>
+    </div>
+  </body>
+</html>
