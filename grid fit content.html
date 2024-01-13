@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        width: 600px;
+        background: wheat;
+        margin: 45px auto 0;
+        color: white;
+        font-size: 20px;
+
+        display: grid;
+        grid-template-columns: fit-content(200px) 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5px;
+      }
+      .items1 {
+        background: green;
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+      }
+      .items4 {
+        background: red;
+      }
+      .items5 {
+        background: olivedrab;
+      }
+      .items6 {
+        background: lightcoral;
+      }
+      .items7 {
+        background: lightpink;
+      }
+      .items8 {
+        background: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid fit content: it works like max-content with parameter</h1>
+    <div class="container">
+      <div class="items items1">
+        Second Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus, molestias. Doloribus quasi hic culpa optio tenetur, unde
+        voluptatum vel est nam, accusantium magnam inventore exercitationem sunt
+        ad! Rerum, molestiae laborum?
+      </div>
+      <div class="items items2">
+        Second Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus, molestias. Doloribus quasi hic culpa optio tenetur, unde
+        voluptatum vel est nam, accusantium magnam inventore exercitationem sunt
+        ad! Rerum, molestiae laborum?
+      </div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Fourth</div>
+      <div class="items items5">Fifth</div>
+      <div class="items items6">Sixth</div>
+      <div class="items items7">Seven</div>
+      <div class="items items8">Eight</div>
+    </div>
+  </body>
+</html>

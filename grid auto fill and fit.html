@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        width: 80%;
+        height: 700px;
+        background: lightblue;
+        font-size: 30px;
+
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, 100px); */
+        /* grid-template-columns: repeat(auto-fit, 100px); */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+      }
+
+      .items1 {
+        background: green;
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+      }
+      .items4 {
+        background: red;
+        grid-column-end: -1;
+      }
+      .items5 {
+        background: olivedrab;
+      }
+      .items6 {
+        background: lightcoral;
+      }
+      .items7 {
+        background: tomato;
+      }
+      .items8 {
+        background: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid : grid auto fill and fit</h1>
+
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+    </div>
+  </body>
+</html>
