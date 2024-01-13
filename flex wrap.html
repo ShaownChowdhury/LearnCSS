@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flex</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 200px;
+        background: #eee;
+        margin: 30px 0 0 20px;
+        padding: 10px;
+        border: 1px solid black;
+
+        display: flex;
+        /* flex-direction: column;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse; */
+        flex-flow: column wrap-reverse;
+      }
+      .items {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+      }
+      .items1 {
+        background: green;
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+      }
+      .items4 {
+        background: red;
+      }
+      .items5 {
+        background: red;
+      }
+      .items6 {
+        background: red;
+      }
+      .items7 {
+        background: red;
+      }
+      .items8 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flex : flex wrap : nowrap,wrap,wrap-reverse</h1>
+    <h2>flex-flow</h2>
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+      <div class="items items5">five</div>
+      <div class="items items6">six</div>
+      <div class="items items7">seven</div>
+      <div class="items items8">eight</div>
+    </div>
+  </body>
+</html>

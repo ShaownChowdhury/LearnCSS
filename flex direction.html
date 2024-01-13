@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flex</title>
+    <style>
+      .container {
+        width: 600px;
+        background: #eee;
+        margin: 30px 0 0 20px;
+        padding: 10px;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse;
+      }
+      .items {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+      }
+      .items1 {
+        background: green;
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+      }
+      .items4 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flex : flex direction : row,row-reverse,column,column-reverse</h1>
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+    </div>
+  </body>
+</html>

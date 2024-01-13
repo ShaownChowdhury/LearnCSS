@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        width: 300px;
+        background: wheat;
+        margin: 45px auto 0;
+        color: white;
+        font-size: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px);
+        grid-gap: 5px;
+      }
+      .items {
+        max-width: 150px;
+        padding: 5px;
+      }
+      .items1 {
+        background: green;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        align-self: start;
+        justify-self: start;
+        z-index: 3;
+      }
+      .items2 {
+        background: blue;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        align-self: center;
+        justify-self: center;
+        z-index: 2;
+      }
+      .items3 {
+        background: orange;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        align-self: end;
+        justify-self: end;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid: grid overlapping z-index</h1>
+    <div class="container">
+      <div class="items items1">
+        first Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        nemo magnam atque quidem eveniet recusandae facere? Autem numquam nisi
+        provident.
+      </div>
+      <div class="items items2">
+        Second Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+        numquam quos tempora hic? Hic autem excepturi alias, culpa qui optio?
+      </div>
+      <div class="items items3">
+        Third Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+        sequi distinctio quos nesciunt omnis! Voluptatum vero nisi aspernatur
+        nihil consectetur.
+      </div>
+    </div>
+  </body>
+</html>

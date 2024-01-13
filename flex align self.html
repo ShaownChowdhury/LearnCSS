@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flex</title>
+    <style>
+      .container {
+        background: #eee;
+        border: 1px solid black;
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+      }
+      .items {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+      }
+      .items1 {
+        background: green;
+        align-self: end;
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+      }
+      .items4 {
+        background: red;
+        align-self: start;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flex : align-self</h1>
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+    </div>
+  </body>
+</html>
