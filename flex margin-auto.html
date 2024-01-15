@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flex</title>
+    <style>
+      .container {
+        width: 600px;
+        background: #eee;
+        margin: 30px 0 0 20px;
+        padding: 10px;
+        border: 1px solid black;
+
+        display: flex;
+      }
+      .items {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        height: 100px;
+      }
+      .items1 {
+        background: green;
+        /* margin-right: auto; */
+      }
+      .items2 {
+        background: blue;
+      }
+      .items3 {
+        background: orange;
+        margin: auto;
+      }
+      .items4 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flex & margin-auto:</h1>
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">Second</div>
+      <div class="items items3">Third</div>
+      <div class="items items4">Forth</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flex</title>
+    <style>
+      .container {
+        width: 600px;
+        background: #eee;
+        margin: 30px 0 0 20px;
+        padding: 10px;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .items {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+        height: 100px;
+      }
+      .items1 {
+        background: green;
+      }
+      .items2 {
+        background: blue;
+        display: flex;
+      }
+      .items2 > .subitem {
+        background: yellowgreen;
+        flex-grow: 1;
+        margin: 5px;
+        font-size: 30px;
+      }
+      .items3 {
+        background: orange;
+        display: flex;
+      }
+      .items3 > .subitem {
+        background: wheat;
+        color: red;
+        flex-grow: 1;
+        margin: 5px;
+        padding: 15px;
+      }
+      .items4 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Nested Flex :: ⬇️</h1>
+    <div class="container">
+      <div class="items items1">First</div>
+      <div class="items items2">
+        <div class="subitem subitem1">Shaown</div>
+        <div class="subitem subitem2">Chowdhury</div>
+      </div>
+      <div class="items items3">
+        <div class="subitem subitem1">A</div>
+        <div class="subitem subitem2">B</div>
+        <div class="subitem subitem3">C</div>
+      </div>
+      <div class="items items4">Forth</div>
+    </div>
+  </body>
+</html>
