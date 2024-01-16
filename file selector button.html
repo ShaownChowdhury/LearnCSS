@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File selector button</title>
+    <style>
+      input[type=file]{
+        color:red;
+      }
+      input[type=file]::file-selector-button{
+      border:2px solid green;
+      background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label> Upload file: </label>
+      <input type="file" id="fileSelect"></input>
+    </form>
+  </body>
+</html>
