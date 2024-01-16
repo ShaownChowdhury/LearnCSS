@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backdrop filter</title>
+    <style>
+      #container {
+        width: 600px;
+        height: 600px;
+        background: url(./flexbox-layout/image/web-design.jpg) no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #inner {
+        width: 400px;
+        height: 250px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        backdrop-filter: blur(30px);
+        backdrop-filter: sepia(100%);
+      }
+      #inner h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Backdrop filter</h1>
+    <div id="container">
+      <div id="inner"><h2>Shaown Chowdhury</h2></div>
+    </div>
+  </body>
+</html>
