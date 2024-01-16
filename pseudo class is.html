@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:is pseudo class</title>
+    <style>
+      /* #test1 :is(h1, h2, h3) {
+        color: red;
+      } */
+      :is(#test1, #test2) h1,
+      p {
+        color: blue;
+      }
+      /* :is(#test1, #test2) h1 {
+        color: blue;
+      } */
+
+      /* #test1 h1,
+      h2,
+      h3 {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>:is pseudo class</h1>
+    <div id="test1">
+      <h1>Section one</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+        sapiente culpa beatae minus dolore. Nesciunt dolorum molestiae alias
+        voluptates? Facere ullam molestias veniam maxime, similique non earum
+        expedita fuga hic, aspernatur perspiciatis exercitationem, iusto nemo
+        voluptatibus eos nostrum? Eaque fugit ea voluptate ab dignissimos ex
+        velit officia eligendi nisi quae?
+      </p>
+      <h2>Sub heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+        quis!
+      </p>
+
+      <h3>sub heading 2</h3>
+    </div>
+    <div id="test2">
+      <h1>Section two</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+        dolorem perferendis, enim vero nisi consequatur magni, suscipit quam
+        vitae quisquam expedita ullam! Magnam alias explicabo at optio nesciunt
+        ipsa incidunt eum corporis reiciendis fugit dolore, placeat labore
+        libero officia est accusantium voluptates quis obcaecati odit enim velit
+        itaque aliquid. Cumque!
+      </p>
+    </div>
+  </body>
+</html>
