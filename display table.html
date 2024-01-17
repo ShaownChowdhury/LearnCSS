@@ -20,8 +20,21 @@
         display: table;
         margin: 0 auto;
       }
+      #row-group {
+        display: table-row-group;
+        /* background: lightcoral; */
+      }
       .row {
         display: table-row;
+      }
+      #table-colgroup {
+        display: table-column-group;
+      }
+      .table-col {
+        display: table-column;
+      }
+      .col-2 {
+        background: greenyellow;
       }
       .col {
         border: 1px solid black;
@@ -40,30 +53,57 @@
         font-weight: bold;
         text-align: center;
       }
+      .caption {
+        display: table-caption;
+        text-align: center;
+        text-transform: uppercase;
+        color: red;
+      }
     </style>
   </head>
   <body>
     <h1>Display table:</h1>
+    <ol>
+      <li>table</li>
+      <li>table-cell</li>
+      <li>table-row</li>
+      <li>table-row-group</li>
+      <li>table-column</li>
+      <li>table-column-group</li>
+      <li>table-header-group</li>
+      <li>table-footer-group</li>
+      <li>table-caption</li>
+    </ol>
     <div id="table">
+      <div class="caption">
+        <h3>STUDENT information</h3>
+      </div>
+      <div id="table-colgroup">
+        <div class="table-col col-1">col 1</div>
+        <div class="table-col col-2">col 2</div>
+        <div class="table-col col-3">col 3</div>
+      </div>
       <div class="table-header">
         <div class="col">ROLL</div>
         <div class="col">STUDENT NAME</div>
         <div class="col">AGE</div>
       </div>
-      <div class="row">
-        <div class="col">1</div>
-        <div class="col">Shaown</div>
-        <div class="col">23</div>
-      </div>
-      <div class="row">
-        <div class="col">2</div>
-        <div class="col">Badhon</div>
-        <div class="col">25</div>
-      </div>
-      <div class="row">
-        <div class="col">3</div>
-        <div class="col">Shamim</div>
-        <div class="col">25</div>
+      <div id="row-group">
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">Shaown</div>
+          <div class="col">23</div>
+        </div>
+        <div class="row">
+          <div class="col">2</div>
+          <div class="col">Badhon</div>
+          <div class="col">25</div>
+        </div>
+        <div class="row">
+          <div class="col">3</div>
+          <div class="col">Shamim</div>
+          <div class="col">25</div>
+        </div>
       </div>
       <div class="table-footer">
         <div class="col"></div>
