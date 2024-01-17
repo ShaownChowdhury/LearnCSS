@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo class :fullscreen</title>
+    <style>
+      #test {
+        background: lightblue;
+        width: 350px;
+        /* height: 200px; */
+        aspect-ratio: 1/2;
+      }
+      #test:fullscreen {
+        /* background: lightgreen; */
+        /* background: #1c92d2; */
+        background: #1e9600;
+        background: -webkit-linear-gradient(
+          to right,
+          #ff0000,
+          #fff200,
+          #1e9600
+        );
+        background: linear-gradient(to right, #ff0000, #fff200, #1e9600);
+
+        font-size: 40px;
+      }
+      #test:not(:fullscreen) {
+        background: lightseagreen;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>:fullscreen</h1>
+    <!-- <div id="test">
+      <p>i m in fullscreen mode</p>
+    </div> -->
+    <img src="./Shaown.jpg" id="test" />
+    <button onclick="document.getElementById('test').requestFullscreen();">
+      go to fullscreen
+    </button>
+  </body>
+</html>
