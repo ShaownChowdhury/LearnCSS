@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min,max,clamp</title>
+    <style>
+      .element {
+        background: pink;
+        /* width: min(50%, 500px); */
+        /* width: max(50%, 500px); */
+        width: clamp(350px, 50%, 500px);
+        font-size: clamp(20px, 5vw, 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Min,max,clamp(min,prefered value,max):</h1>
+    <div class="element">Yahoo Baba</div>
+  </body>
+</html>
