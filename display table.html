@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display table</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #table {
+        width: 600px;
+        border: 1px solid black;
+        display: table;
+        margin: 0 auto;
+      }
+      .row {
+        display: table-row;
+      }
+      .col {
+        border: 1px solid black;
+        display: table-cell;
+        padding: 10px;
+      }
+      .table-header {
+        display: table-header-group;
+        background: lightblue;
+        font-weight: bold;
+        text-align: center;
+      }
+      .table-footer {
+        display: table-footer-group;
+        background: lightblue;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display table:</h1>
+    <div id="table">
+      <div class="table-header">
+        <div class="col">ROLL</div>
+        <div class="col">STUDENT NAME</div>
+        <div class="col">AGE</div>
+      </div>
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">Shaown</div>
+        <div class="col">23</div>
+      </div>
+      <div class="row">
+        <div class="col">2</div>
+        <div class="col">Badhon</div>
+        <div class="col">25</div>
+      </div>
+      <div class="row">
+        <div class="col">3</div>
+        <div class="col">Shamim</div>
+        <div class="col">25</div>
+      </div>
+      <div class="table-footer">
+        <div class="col"></div>
+        <div class="col">TOTAL STUDENTS</div>
+        <div class="col">3</div>
+      </div>
+    </div>
+  </body>
+</html>
