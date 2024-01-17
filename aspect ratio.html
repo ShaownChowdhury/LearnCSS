@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aspect ratio</title>
+    <style>
+      #test {
+        background: pink;
+        /* width: 300px; */
+        border: 2px solid black;
+        padding: 10px;
+        aspect-ratio: 2/1;
+      }
+      img {
+        width: 350px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border: 2px solid blue;
+      }
+      #parent {
+        width: 400px;
+        border: 2px solid blue;
+      }
+      #parent iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aspect ratio</h1>
+    <div id="parent">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/hKdH83AybQU?si=GxglKm9X8bzJH7Y7"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <img src="./Shaown.jpg" />
+    <div id="test">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+      architecto culpa, reprehenderit sint rem soluta consequatur, esse
+      doloribus minima voluptate dolorem explicabo quidem, iste labore. Non cum
+      tempore qui eveniet perspiciatis rem minus ratione, nobis autem animi
+      tempora beatae deleniti at, quo voluptates eaque quidem fuga! Ratione quia
+      obcaecati nisi porro laboriosam explicabo, deleniti nam aperiam alias
+      inventore facere, eligendi veritatis doloremque quam placeat voluptate
+      debitis impedit commodi. Obcaecati quidem sapiente praesentium atque
+      mollitia enim incidunt libero, est molestias odit esse sint, accusamus
+      quod. Voluptatibus quae veritatis suscipit iste. Inventore esse harum
+      earum atque delectus architecto rerum facilis at tenetur?
+    </div>
+  </body>
+</html>
