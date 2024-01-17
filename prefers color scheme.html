@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS prefers color scheme</title>
+    <style>
+      :root {
+        --base-color: pink;
+      }
+      body {
+        /* background: orange; */
+        background: var(--base-color);
+      }
+      @media (prefers-color-scheme: light) {
+        /* body {
+          background: greenyellow;
+        } */
+        :root {
+          --base-color: lightblue;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        /* body {
+          background: pink;
+        } */
+        :root {
+          --base-color: lightcoral;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS @media (prefers-color-scheme):dark/light</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo hic
+      sapiente voluptate! Magnam assumenda pariatur, voluptatum, laborum saepe
+      beatae eum vel, quasi explicabo ut quam! Sunt quaerat sed dolores harum
+      minus omnis maxime dolor. Quia quis magni at dolores fugit debitis tempora
+      nam sed necessitatibus odit vel doloremque, consectetur, tempore odio
+      sapiente delectus fugiat eligendi numquam hic iure culpa perferendis? Sed
+      officia harum reiciendis aliquid fugiat obcaecati quo dicta, esse, sequi
+      totam alias corporis, vitae sapiente eaque impedit tenetur voluptates.
+      Officiis veniam, eius nemo ducimus similique possimus ullam obcaecati quae
+      eaque commodi ut tempora et necessitatibus dolorem libero magni quisquam
+      impedit sunt ex saepe reiciendis. Quia distinctio magnam quis ipsam, neque
+      magni animi quidem ex quaerat, molestiae quod, deserunt laboriosam eos
+      libero illo temporibus nesciunt veniam ratione! Laborum facilis nam magni
+      distinctio. In, ea nulla nisi maxime voluptatibus aut a, dicta repudiandae
+      quam iusto quos animi? Veritatis eos vitae dolor rerum dolores, dolorum
+      harum sapiente impedit accusantium. Sed possimus recusandae incidunt
+      dicta? Esse fugiat numquam expedita neque ipsam dolores. Labore deleniti
+      reiciendis possimus soluta doloribus tenetur illo dignissimos nemo
+      voluptas sed earum nihil, mollitia in, totam iure? Dolores a, similique
+      pariatur debitis odio recusandae consectetur minus nemo quidem, est
+      reiciendis.
+    </p>
+  </body>
+</html>
