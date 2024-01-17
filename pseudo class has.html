@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS parent selector:has</title>
+    <style>
+      h1:has(span) {
+        text-decoration: underline;
+        background: lightblue;
+      }
+      ul:has(*:empty) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS parent selector :has</h1>
+    <h1>yahoo <span>baba</span>:</h1>
+    <h1>yahoo baba:</h1>
+    <ul>
+      <li></li>
+      <li>banana</li>
+      <li>lichu</li>
+      <li>orange</li>
+    </ul>
+  </body>
+</html>
