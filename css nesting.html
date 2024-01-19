@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Nesting</title>
+    <style>
+      #menu {
+        & li {
+          background: pink;
+
+          & a {
+            color: red;
+            text-decoration: none;
+
+            &:hover {
+              color: greenyellow;
+            }
+          }
+        }
+      }
+      #box {
+        > h2 {
+          color: aqua;
+        }
+        .demo {
+          color: blue;
+        }
+      }
+      .foo {
+        color: orange;
+
+        &.bar {
+          color: orchid;
+          font-size: 20px;
+        }
+      }
+      /* .parent :is(.foo, .bar) {
+        color: red;
+        font-size: 30px;
+      } */
+      .parent {
+        .foo,
+        .bar {
+          color: red;
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Nesting:</h1>
+    <ul id="menu">
+      <li><a href="">link 1</a></li>
+      <li><a href="">link 2</a></li>
+      <li><a href="">link 3</a></li>
+      <li><a href="">link 4</a></li>
+    </ul>
+    <div id="box">
+      <h2>Testing h2</h2>
+      <div>
+        <h2>testing 2</h2>
+      </div>
+      <h3 class="demo">Another test</h3>
+    </div>
+    <div class="foo">test 1</div>
+    <div class="foo bar">test 2</div>
+    <div class="parent">
+      <div class="foo">foo</div>
+      <div class="bar">bar</div>
+    </div>
+  </body>
+</html>
