@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS hover</title>
+    <style>
+      .box {
+        width: 400px;
+        border: 1px solid red;
+        margin: 10px auto;
+        /* padding: 10px; */
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .box-image {
+        display: block;
+      }
+      .box-image img {
+        width: 100%;
+        height: 100%;
+      }
+      /* .box > img {
+        position: absolute;
+        top: 49%;
+        left: 48%;
+      } */
+      .box .mid-img {
+        position: absolute;
+        top: 49%;
+        left: 48%;
+        display: hide;
+        transform: scale(0);
+        transition-duration: 0.3s;
+      }
+      .slide {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background: lightskyblue;
+        transition: all 0.2s;
+      }
+      .slide1 {
+        top: 0%;
+        left: -50%;
+        position: absolute;
+      }
+      .slide2 {
+        top: 100%;
+        left: 0;
+        position: absolute;
+      }
+      .slide3 {
+        top: -50%;
+        left: 50%;
+        position: absolute;
+      }
+      .slide4 {
+        top: 50%;
+        left: 100%;
+        position: absolute;
+      }
+      .box:hover {
+        .slide1 {
+          top: 0%;
+          left: 0%;
+          position: absolute;
+          opacity: 0.4;
+        }
+        .slide2 {
+          top: 50%;
+          left: 0;
+          position: absolute;
+          opacity: 0.2;
+        }
+        .slide3 {
+          top: 0%;
+          left: 50%;
+          position: absolute;
+          opacity: 0.2;
+        }
+        .slide4 {
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          opacity: 0.4;
+        }
+        .mid-img {
+          transform: scale(1);
+          transition-delay: 0.1s;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multiside hover</h1>
+    <div class="box">
+      <div class="box-image">
+        <img src="../Shaown.jpg" alt="shaown" />
+      </div>
+      <div class="mid-img">
+        <img src="../arrow.png" />
+      </div>
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+      <div class="slide slide4"></div>
+    </div>
+  </body>
+</html>
