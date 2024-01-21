@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border hover</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 450px;
+        margin: 10px auto;
+        box-shadow: 0 0 15px red;
+        position: relative;
+        overflow: hidden;
+      }
+      .box:before,
+      .box:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.2s;
+      }
+      .box:before {
+        bottom: 5%;
+        left: 5%;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+      }
+      .box:after {
+        top: 4.3%;
+        right: 4.3%;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+      }
+      .box:hover:before,
+      .box:hover:after {
+        opacity: 1;
+        width: 90%;
+        height: 90%;
+      }
+      .box img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transform: scale(1);
+        transition: all 0.2s;
+      }
+      .box:hover img {
+        transform: scale(1.05);
+      }
+      .box .box-content {
+        width: 100%;
+        color: white;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+      }
+      .box .first,
+      .box .second {
+        display: block;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        opacity: 1;
+      }
+      .box .second {
+        opacity: 0;
+      }
+      .box:hover {
+        .first {
+          opacity: 0;
+        }
+        .second {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../images/world.jpg" alt="world" />
+      <div class="box-content">
+        <h3 class="first">Picture of</h3>
+        <h3 class="second">World</h3>
+      </div>
+    </div>
+  </body>
+</html>
