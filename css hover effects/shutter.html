@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shutter hover</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 450px;
+        margin: 10px auto;
+        background: #fff;
+        box-shadow: 0 0 15px greenyellow;
+        position: relative;
+        overflow: hidden;
+      }
+      .box img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .box .box-content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .box .box-content:before,
+      .box .box-content:after {
+        content: "";
+        width: 95%;
+        height: 47%;
+        background: red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: all 0.2s;
+        opacity: 0;
+      }
+      .box .box-content:before {
+        top: -20%;
+        background: green;
+      }
+      .box .box-content:after {
+        bottom: -20%;
+      }
+      .box:hover {
+        .box-content:before {
+          top: 3%;
+          opacity: 0.8;
+        }
+        .box-content:after {
+          bottom: 3%;
+          opacity: 0.8;
+        }
+      }
+      .box .content {
+        width: 100%;
+        height: 45%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+        opacity: 0;
+        transform: rotate(90deg);
+        text-align: center;
+        transition: all 0.5s;
+      }
+      .box .title {
+        color: white;
+        font-size: 22px;
+        margin-bottom: 7px;
+        text-transform: capitalize;
+      }
+      .box .post {
+        color: white;
+        font-size: 22px;
+        text-transform: capitalize;
+      }
+      .box:hover .content {
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../images/world.jpg" alt="" />
+      <div class="box-content">
+        <div class="content">
+          <h3 class="title">This is a</h3>
+          <h3 class="post">World</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
