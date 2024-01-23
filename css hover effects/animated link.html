@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated link</title>
+    <style>
+      .btn {
+        width: 300px;
+        text-align: center;
+        border: 1px solid red;
+        color: red;
+        display: inline-block;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        margin: 10px 30px;
+      }
+      .btn:after {
+        content: "";
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: red;
+        z-index: -1;
+        transition: all 0.9s;
+      }
+      .btn:hover {
+        color: white;
+        text-transform: uppercase;
+      }
+      .btn:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="" class="btn">Save</a>
+  </body>
+</html>
