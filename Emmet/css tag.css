@@ -23,3 +23,6 @@ body {
   padding-bottom: 3;
   padding-right: 2;
 }
+.font {
+  font: 1em sans-serif;
+}
