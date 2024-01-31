@@ -31,3 +31,6 @@ body {
   font-size: 3;
   font-family: fantasy;
 }
+.text {
+  text-decoration: none;
+}
