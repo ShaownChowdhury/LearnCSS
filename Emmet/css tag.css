@@ -8,4 +8,7 @@ body {
   display: table-header-group;
   display: table-column-group;
   display: table-row;
+  cursor: pointer;
+  cursor: move;
 }
+/* page 8 comopleted */
