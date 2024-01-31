@@ -17,3 +17,8 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.padding {
+  padding: 2;
+  padding-top: 2;
+  padding-bottom: 3;
+}
