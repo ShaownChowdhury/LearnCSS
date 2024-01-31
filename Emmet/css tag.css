@@ -27,4 +27,6 @@ body {
   font: 1em sans-serif;
   font-weight: normal;
   font-style: italic;
+  font-variant: normal;
+  font-size: 3;
 }
