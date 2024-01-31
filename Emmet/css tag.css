@@ -1,0 +1,11 @@
+body {
+  position: static;
+}
+.test {
+  top: 2;
+  bottom: 3;
+  display: table;
+  display: table-header-group;
+  display: table-column-group;
+  display: table-row;
+}
